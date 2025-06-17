@@ -20,6 +20,7 @@ body {
     height: 100%;
     overflow: hidden;
     z-index: -1;
+    pointer-events: none;
 }
 
 .bg-animated span {
@@ -112,6 +113,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 .left-nav {
@@ -370,6 +373,7 @@ ul {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Ensure project links do not have underline by default */
 .project a {
     color: gold;
     font-size: 16px;
@@ -378,8 +382,9 @@ ul {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Remove underline even on hover for project links */
 .project a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .contact-section {
@@ -408,6 +413,7 @@ ul {
     margin-bottom: 20px;
 }
 
+/* Ensure contact-section links do not have underline */
 .contact-section a {
     display: inline-block;
     background-color: gold;
@@ -517,13 +523,13 @@ footer {
         gap:20px;
     }
 
+    /* Ensure right-nav links do not have underline */
     .right-nav a {
         display: flex;
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
         color: gold;
-
     }
 
     main {
@@ -792,6 +798,7 @@ footer {
         justify-content: space-between;
     }
 
+    /* Ensure right-nav links do not have underline */
     .right-nav a {
         display: flex;
         text-decoration: none;
@@ -1081,6 +1088,7 @@ footer {
         justify-content: space-between;
     }
 
+    /* Ensure right-nav links do not have underline */
     .right-nav a {
         display: flex;
         text-decoration: none;
@@ -1371,6 +1379,7 @@ footer {
         justify-content: space-between;
     }
 
+    /* Ensure right-nav links do not have underline */
     .right-nav a {
         display: flex;
         text-decoration: none;
@@ -1654,6 +1663,7 @@ footer {
         margin: 0;
     }
 
+    /* Ensure right-nav links do not have underline */
     .right-nav a {
         display: flex;
         text-decoration: none;
